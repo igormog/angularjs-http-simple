@@ -1,0 +1,19 @@
+{
+"records": [
+  {
+    "Name" : "Taras",
+    "City" : "Kiev",
+    "Country" : "Ukraine"
+  },
+  {
+    "Name" : "John",
+    "City" : "New York",
+    "Country" : "USA"
+  },
+  {
+    "Name" : "William",
+    "City" : "London",
+    "Country" : "England"
+  }
+]
+}
