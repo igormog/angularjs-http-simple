@@ -4,6 +4,7 @@ var app = angular.module('myApp', []);
 
 /* For .controller */
 app.controller('customersCtrl', function($scope, $http) {
+
 	$http.get('data.json')
 		.success(function(response) {
 			$scope.names = response.records;
@@ -11,16 +12,16 @@ app.controller('customersCtrl', function($scope, $http) {
 		.error(function (result) {
 			console.log('Error http.get');
 		});
+
 });
 
 /* For .factory
 app.factory('customersCtrl', function($http) {
 
-	var names = {content:null};
+	var names = null;
 	$http.get('data.json').success(function(data) {
-		names.content = data;
+		names = response.records;
 	});
-	return names;
 
 });
 */
